@@ -17,9 +17,12 @@
       	});
       	System.import('/app/environment_main')
             .then(null, console.error.bind(console));
+			  System.import('/app/hello_world_main')
+		        .then(null, console.error.bind(console));
     	</script>
 	</head>
 	<body>
 		<my-app>Loading...</my-app>
+		<my-app2>Loading...</my-app2>
 	</body>
 </html>

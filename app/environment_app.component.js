@@ -23,7 +23,7 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                 }
                 AppComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app'
+                        selector: 'my-app2'
                     }),
                     core_1.View({
                         template: '<h2>My First Angular 2 App</h2>'
