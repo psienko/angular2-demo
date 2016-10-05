@@ -18,7 +18,7 @@ import {Component, View} from "angular2/core"
     <p>List of Fruits:</p>
     <ul>
       <li *ngFor="#fruit of fruits">
-        {{ fruit }}
+        <span (click)="displayAlert(fruit)">{{ fruit }}</span>
       </li>
     </ul>
   `
@@ -38,5 +38,9 @@ export class DataDisplayComponent{
   fruits = ['Apple 2', 'Orange', 'Banana', 'Mango', 'Grapes'];
   myfruit = this.fruits[1];
   init() {this.fruits.push("smth");}
+
+  displayAlert(text){
+    alert(text);
+  }
 
 }
