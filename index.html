@@ -15,11 +15,11 @@
            typescriptOptions: { emitDecoratorMetadata: true },
            packages: {'app': {defaultExtension: 'ts'}}
          });
-         System.import('/app/data_binding_main')
+         System.import('/app/data_display_main')
                .then(null, console.error.bind(console));
       </script>
    </head>
    <body>
-      <app>Loading...</app>
+      <data-display>Loading...</data-display>
    </body>
 </html>
