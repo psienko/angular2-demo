@@ -2,7 +2,8 @@
 <html>
    <head>
       <title>Angular 2 Modules</title>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	 		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
       <script src="https://code.angularjs.org/2.0.0-beta.6/angular2-polyfills.js"></script>
       <script src="https://code.angularjs.org/tools/system.js"></script>
@@ -15,11 +16,11 @@
            typescriptOptions: { emitDecoratorMetadata: true },
            packages: {'app': {defaultExtension: 'ts'}}
          });
-         System.import('/app/user_input_loop_back_main')
+         System.import('/app/form_main')
                .then(null, console.error.bind(console));
       </script>
    </head>
    <body>
-      <loop-back>Loading...</loop-back>
+      <my-form>Loading...</my-form>
    </body>
 </html>
